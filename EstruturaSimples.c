@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <locale.h>
 
 #define alturaMaxima 225
 
@@ -8,6 +9,8 @@ typedef struct {
 } PesoAltura;
 
 int main() {
+    setlocale(LC_ALL, "pt_BR.UTF-8");
+
     PesoAltura pessoa1;
     pessoa1.peso = 80;
     pessoa1.altura = 185;
